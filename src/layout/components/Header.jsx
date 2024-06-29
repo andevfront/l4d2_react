@@ -4,7 +4,7 @@ import { RiLogoutBoxLine } from "react-icons/ri";
 export const Header = () => {
   return (
     <header className="bg-black py-5 text-white">
-      <div className="container mx-auto flex items-center gap-5">
+      <div className="container mx-auto flex items-center gap-5 px-10">
         <Link to="/">
           <figure className="h-9">
             <img className="h-full" src="./img/logo.png" alt="left 4 dead 2" />
@@ -14,7 +14,7 @@ export const Header = () => {
           <ul className="flex items-center gap-6">
             <li>
               <NavLink
-                to="/survivors"
+                to="/sobrevivientes"
                 className={({ isActive }) =>
                   `${isActive && "active"} flex w-[186px] items-center justify-center gap-2 rounded-lg p-2 px-3 transition-[background-color] duration-300 hover:bg-white/10`
                 }
@@ -22,12 +22,12 @@ export const Header = () => {
                 <figure className="h-7">
                   <img className="h-full" src="./img/survivors.png" alt="" />
                 </figure>
-                Surpervivientes
+                Sobrevivientes
               </NavLink>
             </li>
             <li>
               <NavLink
-                to="/infected"
+                to="/infectados"
                 className={({ isActive }) =>
                   `${isActive && "active"} flex w-[150px] items-center justify-center gap-2 rounded-lg p-2 px-3 transition-[background-color] duration-300 hover:bg-white/10`
                 }

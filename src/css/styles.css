@@ -15,3 +15,11 @@ body {
 nav a.active {
   @apply font-bold;
 }
+
+.overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.4) 50%,
+    rgba(255, 255, 0, 0)
+  );
+}

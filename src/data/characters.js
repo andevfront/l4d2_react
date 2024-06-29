@@ -1,0 +1,98 @@
+export const characters = [
+  {
+    id: "survivor-nick",
+    name: "Nick",
+    category: "sobreviviente",
+    first_appearance: "Left 4 Dead 2",
+  },
+  {
+    id: "survivor-rochelle",
+    name: "Rochelle",
+    category: "sobreviviente",
+    first_appearance: "Left 4 Dead 2",
+  },
+  {
+    id: "survivor-coach",
+    name: "Coach",
+    category: "sobreviviente",
+    first_appearance: "Left 4 Dead 2",
+  },
+  {
+    id: "survivor-ellis",
+    name: "Ellis",
+    category: "sobreviviente",
+    first_appearance: "Left 4 Dead 2",
+  },
+  {
+    id: "survivor-bill",
+    name: "Bill",
+    category: "sobreviviente",
+    first_appearance: "Left 4 Dead",
+  },
+  {
+    id: "survivor-zoey",
+    name: "Zoey",
+    category: "sobreviviente",
+    first_appearance: "Left 4 Dead",
+  },
+  {
+    id: "survivor-louis",
+    name: "Louis",
+    category: "sobreviviente",
+    first_appearance: "Left 4 Dead",
+  },
+  {
+    id: "survivor-francis",
+    name: "Francis",
+    category: "sobreviviente",
+    first_appearance: "Left 4 Dead",
+  },
+  {
+    id: "infected-charger",
+    name: "Charger",
+    category: "infectado",
+    first_appearance: "Left 4 Dead 2",
+  },
+  {
+    id: "infected-jockey",
+    name: "Jockey",
+    category: "infectado",
+    first_appearance: "Left 4 Dead 2",
+  },
+  {
+    id: "infected-spitter",
+    name: "Spitter",
+    category: "infectado",
+    first_appearance: "Left 4 Dead 2",
+  },
+  {
+    id: "infected-hunter",
+    name: "Hunter",
+    category: "infectado",
+    first_appearance: "Left 4 Dead",
+  },
+  {
+    id: "infected-smoker",
+    name: "Smoker",
+    category: "infectado",
+    first_appearance: "Left 4 Dead",
+  },
+  {
+    id: "infected-boomer",
+    name: "Boomer",
+    category: "infectado",
+    first_appearance: "Left 4 Dead",
+  },
+  {
+    id: "infected-witch",
+    name: "Witch",
+    category: "infectado",
+    first_appearance: "Left 4 Dead",
+  },
+  {
+    id: "infected-tank",
+    name: "Tank",
+    category: "infectado",
+    first_appearance: "Left 4 Dead",
+  },
+];

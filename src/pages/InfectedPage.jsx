@@ -1,3 +1,5 @@
+import { CharactersGrid } from "../components";
+
 export const InfectedPage = () => {
-  return <div>InfectedPage</div>;
+  return <CharactersGrid category="infectado" />;
 };

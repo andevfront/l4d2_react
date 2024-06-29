@@ -1,3 +1,5 @@
+import { CharactersGrid } from "../components";
+
 export const SurvivorsPage = () => {
-  return <div>SurvivorsPage</div>;
+  return <CharactersGrid category="sobreviviente" />;
 };

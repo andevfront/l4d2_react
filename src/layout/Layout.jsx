@@ -5,7 +5,7 @@ export const Layout = () => {
   return (
     <>
       <Header />
-      <div className="container mx-auto my-10">
+      <div className="container mx-auto my-10 px-10">
         <Outlet />
       </div>
       <Footer />
