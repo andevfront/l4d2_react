@@ -1,16 +1,15 @@
 import { useMemo } from "react";
-import { getCharactersbyCategory } from "../services";
+import { getCharactersByCategory } from "../services";
 import { CharactersCard } from "./CharactersCard";
 
 export const CharactersGrid = ({ category }) => {
-  console.log(category);
   const characters = useMemo(
-    () => getCharactersbyCategory(category),
+    () => getCharactersByCategory(category),
     [category],
   );
 
   return (
-    <div className="grid grid-cols-12 gap-6">
+    <div className="grid grid-cols-12 gap-5">
       {characters.map((character) => (
         <CharactersCard key={character.id} {...character} />
       ))}

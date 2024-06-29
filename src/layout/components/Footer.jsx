@@ -1,10 +1,10 @@
 export const Footer = () => {
   return (
-    <footer className="mt-auto bg-black py-10 text-center text-white">
+    <footer className="mt-auto bg-black py-10 text-center">
       <p>
         Designed by {""}
         <a
-          className="underline"
+          className="text-white underline"
           href="https://github.com/andevfront"
           target="_blank"
         >

@@ -1,6 +1,6 @@
 import { characters } from "../data";
 
-export const getCharactersbyCategory = (category) => {
+export const getCharactersByCategory = (category) => {
   const validCategory = ["sobreviviente", "infectado"];
 
   if (!validCategory.includes(category)) {

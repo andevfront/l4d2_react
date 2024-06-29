@@ -3,11 +3,11 @@ import { RiLogoutBoxLine } from "react-icons/ri";
 
 export const Header = () => {
   return (
-    <header className="bg-black py-5 text-white">
+    <header className="border-b border-zinc-900 bg-black py-5 text-white">
       <div className="container mx-auto flex items-center gap-5 px-10">
         <Link to="/">
           <figure className="h-9">
-            <img className="h-full" src="./img/logo.png" alt="left 4 dead 2" />
+            <img className="h-full" src="/img/logo.png" alt="left 4 dead 2" />
           </figure>
         </Link>
         <nav className="ml-20">
@@ -20,7 +20,7 @@ export const Header = () => {
                 }
               >
                 <figure className="h-7">
-                  <img className="h-full" src="./img/survivors.png" alt="" />
+                  <img className="h-full" src="/img/survivors.png" alt="" />
                 </figure>
                 Sobrevivientes
               </NavLink>
@@ -35,7 +35,7 @@ export const Header = () => {
                 <figure className="h-7 w-7">
                   <img
                     className="h-full w-full"
-                    src="./img/infected.png"
+                    src="/img/infected.png"
                     alt=""
                   />
                 </figure>

@@ -5,11 +5,11 @@
 @tailwind utilities;
 
 body {
-  @apply font-montserrat;
+  @apply bg-black font-montserrat text-slate-300;
 }
 
 #root {
-  @apply flex h-screen w-screen flex-col;
+  @apply flex h-screen flex-col;
 }
 
 nav a.active {
