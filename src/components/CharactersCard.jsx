@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
+import "animate.css";
 
 export const CharactersCard = ({ name, id, category, first_appearance }) => {
   return (
-    <div className="col-span-12 transform transition-transform duration-300 hover:scale-105 sm:col-span-6 lg:col-span-3 xl:col-span-2">
+    <div className="animate__animated animate__fadeIn col-span-12 transform transition-transform duration-300 hover:scale-105 sm:col-span-6 lg:col-span-3 xl:col-span-2">
       <Link to={`/${category}/${id}`}>
         <div className="relative overflow-hidden rounded-lg">
           <img
