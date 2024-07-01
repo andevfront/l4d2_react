@@ -1,5 +1,6 @@
 import { Link, NavLink } from "react-router-dom";
 import { RiLogoutBoxLine } from "react-icons/ri";
+import { IoIosSearch } from "react-icons/io";
 
 export const Header = () => {
   return (
@@ -10,7 +11,7 @@ export const Header = () => {
             <img className="h-full" src="/img/logo.png" alt="left 4 dead 2" />
           </figure>
         </Link>
-        <nav className="ml-20">
+        <nav className="ml-20 hidden lg:block">
           <ul className="flex items-center gap-6">
             <li>
               <NavLink
@@ -44,10 +45,21 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
-        <button className="ml-auto flex items-center gap-2 rounded-lg p-2 px-3 transition-all duration-200 hover:bg-white/10">
-          <RiLogoutBoxLine className="h-5 w-5" />
-          Salir
-        </button>
+        <div className="ml-auto flex items-center gap-6">
+          <NavLink
+            to="/search"
+            className={({ isActive }) =>
+              `${isActive && "active"} relative flex items-center gap-2 rounded-lg p-2 px-3 transition-all duration-200 after:absolute after:-right-3 after:h-full after:w-px after:bg-zinc-900 hover:bg-white/10`
+            }
+          >
+            <IoIosSearch className="h-5 w-5" />
+            Search
+          </NavLink>
+          <button className="flex items-center gap-2 rounded-lg p-2 px-3 transition-all duration-200 hover:bg-white/10">
+            <RiLogoutBoxLine className="h-5 w-5" />
+            Salir
+          </button>
+        </div>
       </div>
     </header>
   );
