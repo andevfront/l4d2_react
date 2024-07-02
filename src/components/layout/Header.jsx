@@ -15,7 +15,7 @@ export const Header = () => {
           <ul className="flex items-center gap-6">
             <li>
               <NavLink
-                to="/sobrevivientes"
+                to="/survivors"
                 className={({ isActive }) =>
                   `${isActive && "active"} flex w-[186px] items-center justify-center gap-2 rounded-lg p-2 px-3 transition-[background-color] duration-300 hover:bg-white/10`
                 }
@@ -28,7 +28,7 @@ export const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/infectados"
+                to="/infected"
                 className={({ isActive }) =>
                   `${isActive && "active"} flex w-[150px] items-center justify-center gap-2 rounded-lg p-2 px-3 transition-[background-color] duration-300 hover:bg-white/10`
                 }

@@ -1,2 +1,2 @@
-export * from "./CharactersCard";
-export * from "./CharactersGrid";
+export * from "./layout";
+export * from "./ui";

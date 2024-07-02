@@ -1,8 +1,8 @@
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
-import { CharactersCard } from "./CharactersCard";
-import { getCharactersByCategory } from "../services";
-import { useLoading } from "../hooks";
 import "react-loading-skeleton/dist/skeleton.css";
+import { CharactersCard } from "../ui";
+import { getCharactersByCategory } from "../../characters";
+import { useLoading } from "../../hooks";
 
 export const CharactersGrid = ({ category }) => {
   const characters = getCharactersByCategory(category);

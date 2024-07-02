@@ -1,10 +1,10 @@
 import { useParams } from "react-router-dom";
-import { getCharacterById } from "../services";
 import { formatDescription } from "../helpers";
-import { useLoading } from "../hooks";
+import { useLoading } from "../../hooks";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import "animate.css";
+import { getCharacterById } from "../services";
 
 export const CharacterPage = () => {
   const { id } = useParams();
