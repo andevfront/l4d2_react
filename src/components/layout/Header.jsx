@@ -1,8 +1,22 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import { IoIosSearch } from "react-icons/io";
+import { useContext } from "react";
+import { AuthContext } from "../../auth";
 
 export const Header = () => {
+  const navigate = useNavigate();
+
+  const { logout } = useContext(AuthContext);
+
+  const handleLogout = () => {
+    logout();
+
+    navigate("/login", {
+      replace: true,
+    });
+  };
+
   return (
     <header className="border-b border-zinc-900 bg-black py-5 text-white">
       <div className="container mx-auto flex items-center gap-5 px-10">
@@ -55,7 +69,10 @@ export const Header = () => {
             <IoIosSearch className="h-5 w-5" />
             Search
           </NavLink>
-          <button className="flex items-center gap-2 rounded-lg p-2 px-3 transition-all duration-200 hover:bg-white/10">
+          <button
+            className="flex items-center gap-2 rounded-lg p-2 px-3 transition-all duration-200 hover:bg-white/10"
+            onClick={handleLogout}
+          >
             <RiLogoutBoxLine className="h-5 w-5" />
             Salir
           </button>
