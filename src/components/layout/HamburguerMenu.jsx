@@ -1,7 +1,8 @@
 import { useContext } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { IoIosSearch } from "react-icons/io";
 import { RiLogoutBoxLine } from "react-icons/ri";
-import { Link, NavLink, useNavigate } from "react-router-dom";
+
 import { AuthContext } from "../../auth";
 
 export const HamburguerMenu = ({ isOpen, toggleMenu }) => {

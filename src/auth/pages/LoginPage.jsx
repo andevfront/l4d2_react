@@ -1,8 +1,9 @@
 import { useContext, useState } from "react";
-import { AuthContext } from "../context";
 import { useNavigate } from "react-router-dom";
-import { useForm } from "../../hooks";
+
+import { AuthContext } from "../context";
 import { users } from "../data";
+import { useForm } from "../../hooks";
 
 export const LoginPage = () => {
   const [formError, setFormError] = useState(false);

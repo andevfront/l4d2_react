@@ -1,10 +1,11 @@
-import { IoIosSearch } from "react-icons/io";
-import { useForm } from "../../hooks";
+import { useMemo } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import queryString from "query-string";
-import { CharactersCard } from "../../components";
+import { IoIosSearch } from "react-icons/io";
+
 import { getCharacterByName } from "../services";
-import { useMemo } from "react";
+import { CharactersCard } from "../../components";
+import { useForm } from "../../hooks";
 
 export const SearchPage = () => {
   const navigate = useNavigate();

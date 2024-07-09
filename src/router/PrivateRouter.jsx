@@ -1,7 +1,8 @@
-import { Navigate, Outlet } from "react-router-dom";
-import { Footer, HamburguerMenu, Header } from "../components";
 import { useContext, useState } from "react";
+import { Navigate, Outlet } from "react-router-dom";
+
 import { AuthContext } from "../auth";
+import { Footer, HamburguerMenu, Header } from "../components";
 
 export const PrivateRouter = () => {
   const {

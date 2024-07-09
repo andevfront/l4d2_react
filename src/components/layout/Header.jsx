@@ -1,9 +1,10 @@
+import { useContext } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import { RiLogoutBoxLine } from "react-icons/ri";
 import { IoIosSearch } from "react-icons/io";
-import { useContext } from "react";
-import { AuthContext } from "../../auth";
 import { GiHamburgerMenu } from "react-icons/gi";
+
+import { AuthContext } from "../../auth";
 
 export const Header = ({ toggleMenu }) => {
   const navigate = useNavigate();
