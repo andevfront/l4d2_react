@@ -12,7 +12,8 @@ body {
   @apply flex h-screen flex-col;
 }
 
-header a.active {
+header a.active,
+nav a.active {
   @apply font-bold;
 }
 

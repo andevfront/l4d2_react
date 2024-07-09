@@ -3,8 +3,9 @@ import { RiLogoutBoxLine } from "react-icons/ri";
 import { IoIosSearch } from "react-icons/io";
 import { useContext } from "react";
 import { AuthContext } from "../../auth";
+import { GiHamburgerMenu } from "react-icons/gi";
 
-export const Header = () => {
+export const Header = ({ toggleMenu }) => {
   const navigate = useNavigate();
 
   const { logout } = useContext(AuthContext);
@@ -59,7 +60,7 @@ export const Header = () => {
             </li>
           </ul>
         </nav>
-        <div className="ml-auto flex items-center gap-6">
+        <div className="ml-auto hidden items-center gap-6 lg:flex">
           <NavLink
             to="/search"
             className={({ isActive }) =>
@@ -67,7 +68,7 @@ export const Header = () => {
             }
           >
             <IoIosSearch className="h-5 w-5" />
-            Search
+            Buscar
           </NavLink>
           <button
             className="flex items-center gap-2 rounded-lg p-2 px-3 transition-all duration-200 hover:bg-white/10"
@@ -77,6 +78,9 @@ export const Header = () => {
             Salir
           </button>
         </div>
+        <button className="ml-auto lg:hidden" onClick={toggleMenu}>
+          <GiHamburgerMenu className="h-7 w-7" />
+        </button>
       </div>
     </header>
   );
