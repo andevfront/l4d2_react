@@ -3,9 +3,13 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { CharactersCard } from "../ui";
 import { getCharactersByCategory } from "../../characters";
 import { useLoading } from "../../hooks";
+import { useMemo } from "react";
 
 export const CharactersGrid = ({ category }) => {
-  const characters = getCharactersByCategory(category);
+  const characters = useMemo(
+    () => getCharactersByCategory(category),
+    [category],
+  );
 
   const { loading } = useLoading();
 

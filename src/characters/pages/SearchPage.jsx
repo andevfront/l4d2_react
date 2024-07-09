@@ -4,13 +4,14 @@ import { useLocation, useNavigate } from "react-router-dom";
 import queryString from "query-string";
 import { CharactersCard } from "../../components";
 import { getCharacterByName } from "../services";
+import { useMemo } from "react";
 
 export const SearchPage = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
   const { q = "" } = queryString.parse(location.search);
-  const characters = getCharacterByName(q);
+  const characters = useMemo(() => getCharacterByName(q), [q]);
   const { searchText, onInputChange } = useForm({
     searchText: q,
   });

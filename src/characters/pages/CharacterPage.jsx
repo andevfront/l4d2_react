@@ -5,11 +5,14 @@ import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
 import "animate.css";
 import { getCharacterById } from "../services";
+import { useMemo } from "react";
 
 export const CharacterPage = () => {
   const { id } = useParams();
-  const { name, category, first_appearance, description } =
-    getCharacterById(id);
+  const { name, category, first_appearance, description } = useMemo(
+    () => getCharacterById(id),
+    [id],
+  );
 
   const formattedDescription = formatDescription(description);
 
